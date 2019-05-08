@@ -1,0 +1,33 @@
+
+<div class="" id="login-page" [class.d-none] = "submitted">
+    <div class="form-box">
+        <div class="form-logo">
+            <p class="text-center"><img src="../assets/images/lvk-logo.png" alt="logo"></p>
+        </div>
+        <form  (ngSubmit)="authenticate()">
+            <input type="text" class="form-control" placeholder="Username">
+            <input type="password" class="form-control" placeholder="Password">
+            <input type="checkbox"> Save Password
+            <input type="submit" class="btn btn-social" value="LOGIN" />
+            
+            <a href="#" class="login-action" title="Forgot password">
+                <p>Forgot your password?</p>
+            </a>
+            <a href="signin.html" class="login-action" title="Signi in">
+                <p>New User?&nbsp;Signup</p>
+            </a>
+            <button class="btn btn-lg btn-google btn-block  gbutton" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Github</button>
+            <button class="btn btn-lg btn-facebook btn-block  lbutton" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with LinkedIn</button>
+        </form>
+    </div>
+</div><!--Close form-box-->
+
+
+<br>
+<router-outlet></router-outlet>
+<br>
+
+<footer class="login-footer text-center">
+    Created By
+</footer>
+
